@@ -51,7 +51,7 @@ function QuestionBus() {
             const data = await response.json();
             if (!data.data) {
             //   setNoMoreQuestions(true);
-                navigate(`/questionBusIntro`);
+                navigate(`/questionBusImSum`);
             } else {
               setQuestion(data.data);
             }

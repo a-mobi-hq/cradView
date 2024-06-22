@@ -39,12 +39,16 @@ function InflationRateGraph({projectId, graphType }) {
   };
 
   const handleClickP = () => {
-    localStorage.setItem('selectedCase', 'Prototype');
-    navigate('/prototype');
+    localStorage.setItem('selectedCase', 'Kpi');
+    navigate('/kpi');
   };
 
   const handleClickCh = () => {
     navigate('/generalSetting');
+  };
+
+  const handleClickC = () => {
+    navigate('/craddule');
   };
 
   const handleClickUp = () => {
@@ -128,10 +132,10 @@ function InflationRateGraph({projectId, graphType }) {
                 <div className="col-md-3">
                     <div className="caseBA3" onClick={handleClickP}>
                         <p className="caseBA3PV">View</p>
-                        <p className="caseBA3P">Prototyping</p>
-                        <p className="caseBA3P2">Create Your prototypes and wireframes for your Business</p>
+                        <p className="caseBA3P">Kpi</p>
+                        <p className="caseBA3P2">Create Custom Graphs that gives you more insight</p>
                         <p className="caseBA3P3">10:20pm 10.10.2022</p>
-                        <p className="caseBA3P2">5 Documents</p>
+                        <p className="caseBA3P2">7 Graph Types</p>
                     </div>
                 </div>
 
@@ -263,7 +267,7 @@ function InflationRateGraph({projectId, graphType }) {
                     <div className="innerStart" style={{padding:20}}>
                         <p className="crh1">Craddule Hub</p>
                         <p className="crh2">View uploaded files in your project</p>
-                        <button className="lookF" style={{marginTop:20, marginBottom:20}}>View Files</button>
+                        <button className="lookF" style={{marginTop:20, marginBottom:20}} onClick={handleClickC}>View Files</button>
                     </div>
                 </div>
 

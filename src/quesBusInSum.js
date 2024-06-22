@@ -20,7 +20,7 @@ import API_BASE_WEB_URL from './config/apiConfigW';
 function QuestionBusIntro() {
 
     const navigate = useNavigate()
-
+    const onClickNext = () => navigate(`/questionBusCon`);
     const onClickHandler = () => navigate(`/video`);
     const [images, setImages] = useState([]);
     const [types, setTypes] = useState([]);
@@ -832,6 +832,8 @@ const handleInsertFile = (file) => {
                     onInsertFile={handleInsertFile}
                   />
                 }
+
+<button type="button" className='btn btn-primary curveNext' onClick={onClickNext} style={{marginTop:20}}> Next</button>
             
             </div>
 

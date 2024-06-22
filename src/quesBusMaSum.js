@@ -617,7 +617,7 @@ const handleInsertFile = (file) => {
 
 
 
-
+ const onClickNext = () => navigate(`/questionBusSo`);
 
 
  const handleMouseDown = (event) => {
@@ -832,7 +832,7 @@ const handleInsertFile = (file) => {
                     onInsertFile={handleInsertFile}
                   />
                 }
-            
+             <button type="button" className='btn btn-primary curveNext' onClick={onClickNext} style={{marginTop:20}}> Next</button>
             </div>
 
                 

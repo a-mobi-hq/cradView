@@ -162,7 +162,7 @@ function QuestionBusIntro() {
  };
 
 
-
+ const onClickNext = () => navigate(`/questionBusMa`);
 
  const createOrUpdateSummary = async (data) => {
    try {
@@ -832,7 +832,7 @@ const handleInsertFile = (file) => {
                     onInsertFile={handleInsertFile}
                   />
                 }
-            
+             <button type="button" className='btn btn-primary curveNext' onClick={onClickNext} style={{marginTop:20}}> Next</button>
             </div>
 
                 

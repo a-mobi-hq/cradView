@@ -618,7 +618,6 @@ const handleInsertFile = (file) => {
 
 
 
-
  const onClickNext = () => navigate(`/questionBusOp`);
 
  const handleMouseDown = (event) => {

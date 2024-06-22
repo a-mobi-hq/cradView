@@ -20,7 +20,7 @@ import API_BASE_WEB_URL from './config/apiConfigW';
 function QuestionBusIntro() {
 
     const navigate = useNavigate()
-
+    const onClickNext = () => navigate(`/questionBusIn`);
     const onClickHandler = () => navigate(`/video`);
     const [images, setImages] = useState([]);
     const [types, setTypes] = useState([]);
@@ -64,7 +64,7 @@ function QuestionBusIntro() {
    useEffect(() => {
      const fetchTypes = async () => {
          try {
-             const response = await axios.get(`${API_BASE_URL}/api/hub/types`);
+          const response = await axios.get(`${API_BASE_URL}/api/hub/types/${projectId}`);
              setImages(response.data);
              setLoading(false);
          } catch (error) {
@@ -554,7 +554,7 @@ const handleInsertFile = (file) => {
  useEffect(() => {
      const fetchSubtypeFiles = async () => {
          try {
-             const response = await axios.get(`${API_BASE_URL}/api/hub/project/${projectId}`);
+          const response = await axios.get(`${API_BASE_URL}/api/hub/types/${projectId}`);
              setTypes(response.data.data);
              console.log(response.data);
             
@@ -832,6 +832,7 @@ const handleInsertFile = (file) => {
                     onInsertFile={handleInsertFile}
                   />
                 }
+                <button type="button" className='btn btn-primary curveNext' onClick={onClickNext} style={{marginTop:20}}> Next</button>
             
             </div>
 

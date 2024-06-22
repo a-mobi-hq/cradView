@@ -128,7 +128,7 @@ function QuestionBusIntro() {
   
  // };
 
-
+ const onClickNext = () => navigate(`/questionBusRi`);
  const handleEditorChange = () => {
    // Get the current selection range
   
@@ -832,7 +832,7 @@ const handleInsertFile = (file) => {
                     onInsertFile={handleInsertFile}
                   />
                 }
-            
+             <button type="button" className='btn btn-primary curveNext' onClick={onClickNext} style={{marginTop:20}}> Next</button>
             </div>
 
                 

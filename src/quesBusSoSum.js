@@ -52,6 +52,8 @@ function QuestionBusIntro() {
       setShowScrollableDiv(!showScrollableDiv);
     };
 
+    const onClickNext = () => navigate(`/questionBusCo`);
+
  const [formData, setFormData] = useState({
    summary: '',
    });
@@ -832,7 +834,7 @@ const handleInsertFile = (file) => {
                     onInsertFile={handleInsertFile}
                   />
                 }
-            
+            <button type="button" className='btn btn-primary curveNext' onClick={onClickNext} style={{marginTop:20}}> Next</button>
             </div>
 
                 
