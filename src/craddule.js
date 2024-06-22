@@ -105,7 +105,7 @@ const Craddule = () => {
       
         <div className='text-center'>
               <p className='taskHeader'>Craddule Hub</p>
-              <p>Here you can create and assign task</p>
+              <p>View uploaded files</p>
         </div>
            <div className='modalStTask'>
               <div className='row'>
