@@ -16,10 +16,10 @@ import graph2 from './images/graph2.png'
 import graph3 from './images/graph3.png'
 import graph4 from './images/graph4.png'
 import graph5 from './images/graph5.png'
-function customFinancial() {
+function CustomFinancial() {
 
-    
-
+  const navigate = useNavigate()
+  const onClickNext = () => navigate(`/inflation`);
     const access_token = localStorage.getItem('access_token');
     const decodedToken = jwtDecode(access_token);
     const userId = decodedToken.userId;
@@ -51,7 +51,7 @@ function customFinancial() {
             
            <div className='row'>
               <div className='col-md-4'>
-                <div className='columnGraph'>
+                <div className='columnGraph' onClick={onClickNext}>
                       <img src={graph6} className='imgX'></img>
                       <p className='graphName'>Inflation Rate</p>
                 </div> 
@@ -105,4 +105,4 @@ function customFinancial() {
 
 
 
-  export default customFinancial;
+  export default CustomFinancial;
