@@ -16,6 +16,8 @@ import FontPicker from './fontPicker';
 import TrackPage from './trackPage';
 import ExecutiveSummary from './ExecutiveSummary';
 import QuestionBus from './questionBus';
+import QuestionBusMain from './questionBusMain';
+import QuestionBusMainSum from './quesBusMainSum';
 import QuestionBusMa from './questionBusMa';
 import QuestionBusSo from './questionBusSo';
 import QuestionBusRi from './questionBusRi';
@@ -24,6 +26,9 @@ import QuestionBusIn from './questionBusIn';
 import QuestionBusOp from './questionBusOp';
 import QuestionBusCo from './questionBusCo';
 import QuestionBusCon from './questionBusCon';
+import QuestionBapEs from './questionBapEs';
+import QuestionBapCs from './questionBapCs';
+
 import ExecutiveSummarys from './executiveSummarys';
 import QuestionBusIntro from './quesBusIntro';
 import QuestionBusCoSum from './quesBusCoSum';
@@ -34,6 +39,8 @@ import QuestionBusRiSum from './quesBusRiSum';
 import QuestionBusImSum from './quesBusImSum';
 import QuestionBusInSum from './quesBusInSum';
 import QuestionBusConSum from './quesBusConSum';
+import QuestionBapCsSum from './quesBapCsSum';
+import QuestionBapEsSum from './quesBapEsSum';
 import ProblemStatement from './problemstatement';
 import PageBenefit from './pageBenefit';
 import InflationRateGraph from './inflationRateGraph';
@@ -188,12 +195,18 @@ import Kpi from './kpi';
 import KpiView from './kpiView';
 import Craddule from './craddule';
 import CradduleType from './cradduleFile';
+import PitchDeckUpload from './pitchDeckUpload';
+import PitchDeckView from './pitchDeckView';
 
 function App() {
   return (
     <Router>
       <Routes>
+        <Route path="/pitchDeckUpload" element= {<PitchDeckUpload />} />
+        <Route path="/pitchDeckView" element= {<PitchDeckView />} />
         <Route path="/questionBus" element= {<QuestionBus />} />
+        <Route path="/questionBusMain" element= {<QuestionBusMain />} />
+        <Route path="/questionBusMainSum/:category/:subCategory" element= {<QuestionBusMainSum />} />
         <Route path="/questionBusCo" element= {<QuestionBusCo />} />
         <Route path="/questionBusOp" element= {<QuestionBusOp />} />
         <Route path="/questionBusMa" element= {<QuestionBusMa />} />
@@ -202,6 +215,8 @@ function App() {
         <Route path="/questionBusIm" element= {<QuestionBusIm />} />
         <Route path="/questionBusIn" element= {<QuestionBusIn />} />
         <Route path="/questionBusCon" element= {<QuestionBusCon />} />
+        <Route path="/questionBapEs" element= {<QuestionBapEs />} />
+        <Route path="/questionBapCs" element= {<QuestionBapCs />} />
         <Route path="/marketAnalysis" element= {<MarketAnalysis />} />
         <Route path="/ExecutiveSummary" element= {<ExecutiveSummary />} />
         <Route path="/executiveSummarys" element= {<ExecutiveSummarys />} />
@@ -214,6 +229,9 @@ function App() {
         <Route path="/questionBusImSum" element= {<QuestionBusImSum />} />
         <Route path="/questionBusInSum" element= {<QuestionBusInSum />} />
         <Route path="/questionBusConSum" element= {<QuestionBusConSum />} />
+        <Route path="/questionBapEsSum" element= {<QuestionBapEsSum />} />
+        <Route path="/questionBapCsSum" element= {<QuestionBapCsSum />} />
+       
         <Route path="/trackPage" element= {<TrackPage />} />
         <Route path="/progress" element= {<Progress />} />
         <Route path="/workLoad" element= {<WorkLoad />} />

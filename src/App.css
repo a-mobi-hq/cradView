@@ -7339,3 +7339,44 @@ color: red;
   font-weight: 600;
 }
 
+.coverPit{
+  background-color: #fff;
+  border-radius: 15px;
+  padding: 20px 40px;
+  margin-top: 50px;
+  margin-top: 50px;
+}
+
+.ppit{
+  font-size: 30px;
+    font-weight: 600;
+    margin-top: 100px;
+}
+
+.ppit2{
+    margin-bottom: 100px;
+}
+
+
+.caseBAVie{
+  margin-top:30px;
+  background-color: #facc05;
+  border-radius: 15px;
+  width: 100%;
+  padding: 40px 30px;
+  color: #fff;
+  cursor: pointer;
+  transition: box-shadow 0.3s ease;
+}
+
+.caseBAVie:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add box shadow on hover */
+}
+
+.conCa{
+  font-weight: 600;
+}
+
+.conCa2{
+  font-size: 12px;
+}
